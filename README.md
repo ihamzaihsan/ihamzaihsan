@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ihamzaihsan/ihamzaihsan/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ihamzaihsan/ihamzaihsan/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake animation of Hamza's GitHub contributions" src="https://raw.githubusercontent.com/ihamzaihsan/ihamzaihsan/output/github-contribution-grid-snake.svg" />
+</picture>
+
 # Hamza Cheema
 
 Software developer working across backend systems, web applications, algorithms, and interactive software. I build in Go, Rust, JavaScript, and TypeScript, with a particular interest in how applications behave below the interface: data, networking, state, and performance.

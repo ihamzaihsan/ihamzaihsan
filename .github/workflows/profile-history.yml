@@ -1,0 +1,56 @@
+name: Generate profile history assets
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [profile-history-assets]
+    paths:
+      - scripts/generate-history.ts
+      - .github/workflows/profile-history.yml
+  schedule:
+    - cron: "21 2 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-history-assets
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: profile-history-assets
+      - uses: actions/checkout@v4
+        with:
+          repository: Platane/snk
+          ref: a041d6c27ba561a39f5be9c26a784812765e434b
+          path: .snk
+          persist-credentials: false
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.3.4"
+      - name: Install Snake dependencies
+        working-directory: .snk
+        run: bun install --frozen-lockfile
+      - name: Generate historical visuals
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+        run: |
+          cp scripts/generate-history.ts .snk/generate-history.ts
+          cd .snk
+          bun run generate-history.ts
+      - name: Publish images on assets branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh profile history images"
+            git push origin HEAD:profile-history-assets
+          fi

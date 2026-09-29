@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="238" viewBox="0 0 790 238" role="img" aria-label="GitHub contributions from January 2024 through 2026-09-29">
+<rect x="1" y="1" width="788" height="236" rx="10" fill="#0d1117" stroke="#30363d"/>
+<g font-family="Arial,sans-serif">
+<text x="24" y="30" fill="#c9d1d9" font-size="17" font-weight="bold">Contributions</text>
+<text x="766" y="30" fill="#8b949e" text-anchor="end" font-size="12">Jan 2024 – Sep 2026</text>
+<line x1="42" y1="186" x2="748" y2="186" stroke="#30363d"/><line x1="42" y1="123" x2="748" y2="123" stroke="#30363d"/><line x1="42" y1="60" x2="748" y2="60" stroke="#30363d"/>
+<text x="32" y="64" fill="#8b949e" text-anchor="end" font-size="10">28</text>
+<text x="32" y="190" fill="#8b949e" text-anchor="end" font-size="10">0</text>
+<polygon points="42,186 42.0,186.0 64.1,186.0 86.1,186.0 108.2,186.0 130.3,186.0 152.3,168.0 174.4,186.0 196.4,96.0 218.5,177.0 240.6,186.0 262.6,186.0 284.7,186.0 306.8,168.0 328.8,132.0 350.9,145.5 372.9,163.5 395.0,181.5 417.1,186.0 439.1,60.0 461.2,163.5 483.3,154.5 505.3,186.0 527.4,186.0 549.4,186.0 571.5,186.0 593.6,186.0 615.6,186.0 637.7,186.0 659.8,118.5 681.8,186.0 703.9,186.0 725.9,181.5 748.0,69.0 748,186" fill="#238636" opacity=".17"/>
+<polyline points="42.0,186.0 64.1,186.0 86.1,186.0 108.2,186.0 130.3,186.0 152.3,168.0 174.4,186.0 196.4,96.0 218.5,177.0 240.6,186.0 262.6,186.0 284.7,186.0 306.8,168.0 328.8,132.0 350.9,145.5 372.9,163.5 395.0,181.5 417.1,186.0 439.1,60.0 461.2,163.5 483.3,154.5 505.3,186.0 527.4,186.0 549.4,186.0 571.5,186.0 593.6,186.0 615.6,186.0 637.7,186.0 659.8,118.5 681.8,186.0 703.9,186.0 725.9,181.5 748.0,69.0" fill="none" stroke="#3fb950" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="42" y="208" fill="#8b949e" font-size="11" text-anchor="middle">2024</text><text x="306.75" y="208" fill="#8b949e" font-size="11" text-anchor="middle">2025</text><text x="571.5" y="208" fill="#8b949e" font-size="11" text-anchor="middle">2026</text><text x="766" y="225" fill="#8b949e" text-anchor="end" font-size="12">139 contributions</text>
+</g></svg>
